@@ -1,0 +1,205 @@
+/**
+ * CourtSim 朝代水墨主题 — 平面设色、无阴影，与工程内 Tailwind 并用时以 var(--cs-*) 为准。
+ * 对应文档：F:\cursor项目\CourtSim\05-美术风格\CourtSim-美术风格与朝代主题.md
+ */
+
+.cs-logo {
+  font-family: var(--font-cs-display), var(--font-cs-serif), "Noto Serif SC", serif;
+}
+
+.courtsim-dynasty-root {
+  --cs-paper: #f4f0e6;
+  --cs-paper-elevated: #faf8f2;
+  --cs-ink: #2a2825;
+  --cs-ink-muted: #5c5650;
+  --cs-ink-faint: #8a8478;
+  --cs-border: #c9c0b0;
+  --cs-border-strong: #9a8f7e;
+  --cs-accent: #3d3a36;
+  --cs-accent-soft: #ebe6dc;
+  --cs-on-accent: #faf8f2;
+  --cs-link: #4a5a6e;
+  --cs-danger: #8b3a2f;
+  --cs-success: #3d5c40;
+  --cs-warn: #8b6914;
+  font-family: var(--font-cs-serif, "Noto Serif SC", "Source Han Serif SC", serif);
+  background-color: var(--cs-paper);
+  color: var(--cs-ink-muted);
+  line-height: 1.7;
+}
+
+/* 秦 — 玄黑、简牍 */
+[data-dynasty="qin"] {
+  --cs-paper: #ebe8e0;
+  --cs-paper-elevated: #f2efe8;
+  --cs-ink: #1c1b1a;
+  --cs-ink-muted: #4a4844;
+  --cs-ink-faint: #6e6a63;
+  --cs-border: #a8a198;
+  --cs-border-strong: #6e6860;
+  --cs-accent: #2c2a26;
+  --cs-accent-soft: #ddd8ce;
+  --cs-on-accent: #f5f2eb;
+  --cs-link: #3d4f5c;
+}
+
+/* 西汉 — 漆红、黄土 */
+[data-dynasty="han-west"] {
+  --cs-paper: #f3ebe4;
+  --cs-paper-elevated: #faf5f0;
+  --cs-ink: #2a221c;
+  --cs-ink-muted: #5c4f45;
+  --cs-ink-faint: #887566;
+  --cs-border: #c4a99a;
+  --cs-border-strong: #8b5a4a;
+  --cs-accent: #7c3d32;
+  --cs-accent-soft: #f0dcd4;
+  --cs-on-accent: #fff9f6;
+  --cs-link: #5a4a6b;
+}
+
+/* 唐 — 青绿痕 */
+[data-dynasty="tang"] {
+  --cs-paper: #e8f0eb;
+  --cs-paper-elevated: #f2f7f4;
+  --cs-ink: #1a2622;
+  --cs-ink-muted: #3d524a;
+  --cs-ink-faint: #5f7569;
+  --cs-border: #9bb5a8;
+  --cs-border-strong: #4d7a66;
+  --cs-accent: #2d5c4d;
+  --cs-accent-soft: #d4e8df;
+  --cs-on-accent: #f5fbf8;
+  --cs-link: #2a4a5c;
+}
+
+/* 北宋 — 天青、雨过 */
+[data-dynasty="song-north"] {
+  --cs-paper: #e6edf2;
+  --cs-paper-elevated: #f0f5f9;
+  --cs-ink: #1f2a32;
+  --cs-ink-muted: #445a68;
+  --cs-ink-faint: #6b8294;
+  --cs-border: #a3b8c7;
+  --cs-border-strong: #5b7c8f;
+  --cs-accent: #3d5a6e;
+  --cs-accent-soft: #d8e6ef;
+  --cs-on-accent: #f7fbfd;
+  --cs-link: #2d4a5e;
+}
+
+/* 五代十国 — 铁锈、黄土 */
+[data-dynasty="wudai-shiguo"] {
+  --cs-paper: #ede6dc;
+  --cs-paper-elevated: #f5efe6;
+  --cs-ink: #342e26;
+  --cs-ink-muted: #5e5346;
+  --cs-ink-faint: #887660;
+  --cs-border: #b8a68f;
+  --cs-border-strong: #8b6914;
+  --cs-accent: #6b4f2a;
+  --cs-accent-soft: #e8dcc8;
+  --cs-on-accent: #fdf9f3;
+  --cs-link: #4a5568;
+}
+
+/* 明 — 宫墙、朱砂意 */
+[data-dynasty="ming"] {
+  --cs-paper: #f2ebe6;
+  --cs-paper-elevated: #faf5f2;
+  --cs-ink: #261a15;
+  --cs-ink-muted: #5c4038;
+  --cs-ink-faint: #8a6258;
+  --cs-border: #c9a99a;
+  --cs-border-strong: #9a4a38;
+  --cs-accent: #8b2e1f;
+  --cs-accent-soft: #f0dcd6;
+  --cs-on-accent: #fffaf8;
+  --cs-link: #4a3d5c;
+}
+
+/* 清 — 石青、缂丝灰 */
+[data-dynasty="qing"] {
+  --cs-paper: #e8eaee;
+  --cs-paper-elevated: #f2f4f7;
+  --cs-ink: #1a1f26;
+  --cs-ink-muted: #3d4754;
+  --cs-ink-faint: #667286;
+  --cs-border: #a8b0bd;
+  --cs-border-strong: #4a5f78;
+  --cs-accent: #2f4a62;
+  --cs-accent-soft: #d8dfe8;
+  --cs-on-accent: #f7f9fc;
+  --cs-link: #2d4f6a;
+}
+
+/* 界栏式顶边（仿书画装裱，无圆角） */
+.cs-rule-top {
+  border-top: 3px double var(--cs-border-strong);
+}
+
+.cs-rule-bottom {
+  border-bottom: 3px double var(--cs-border-strong);
+}
+
+.cs-surface {
+  background-color: var(--cs-paper-elevated);
+  border: 1px solid var(--cs-border);
+  border-radius: 12px;
+}
+
+.cs-btn-primary {
+  background-color: var(--cs-accent);
+  color: var(--cs-on-accent);
+  border-radius: 8px;
+  font-weight: 500;
+  transition: opacity 0.2s ease;
+}
+
+.cs-btn-primary:hover {
+  opacity: 0.92;
+}
+
+.cs-btn-secondary {
+  background-color: transparent;
+  color: var(--cs-ink-muted);
+  border: 1px solid var(--cs-border);
+  border-radius: 8px;
+  transition: opacity 0.2s ease, border-color 0.2s ease;
+}
+
+.cs-btn-secondary:hover {
+  border-color: var(--cs-border-strong);
+  opacity: 0.95;
+}
+
+.cs-text-title {
+  color: var(--cs-ink);
+  font-weight: 500;
+}
+
+.cs-text-muted {
+  color: var(--cs-ink-faint);
+}
+
+.cs-nav a:hover {
+  color: var(--cs-ink);
+  opacity: 0.85;
+}
+
+/* 远山大写意（纯平涂剪影，无渐变） */
+.cs-ink-mountains {
+  display: block;
+  width: 100%;
+  height: 48px;
+  color: var(--cs-ink);
+  opacity: 0.12;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .cs-btn-primary,
+  .cs-btn-secondary {
+    transition: none;
+  }
+}

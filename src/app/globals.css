@@ -1,0 +1,20 @@
+@import "tailwindcss";
+@import "../styles/courtsim-dynasty.css";
+
+:root {
+  --background: #f4f0e6;
+  --foreground: #2a2825;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-cs-serif), "Noto Serif SC", serif;
+  --font-mono: ui-monospace, monospace;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-cs-serif), "Noto Serif SC", "Source Han Serif SC", serif;
+}
