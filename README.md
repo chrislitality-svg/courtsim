@@ -1,3 +1,5 @@
+<p align="center"><img src="docs/banner.svg" alt="courtsim banner" width="100%"></p>
+
 # CourtSim · 明朝朝堂政治推演
 
 > **站在明代大臣的位置上，处理一桩桩真实的朝堂难题。**
