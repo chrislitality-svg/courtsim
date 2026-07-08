@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 320" font-family="'Noto Serif SC','Songti SC',ui-serif,serif">
+  <defs>
+    <linearGradient id="ct-bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#201c17"/><stop offset="1" stop-color="#332a20"/>
+    </linearGradient>
+    <linearGradient id="ct-gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#EBD08A"/><stop offset="1" stop-color="#B8912F"/>
+    </linearGradient>
+  </defs>
+  <rect width="1280" height="320" fill="url(#ct-bg)"/>
+  <!-- 淡墨晕 -->
+  <ellipse cx="1050" cy="70" rx="300" ry="130" fill="#d8c9a8" opacity="0.06"/>
+  <ellipse cx="300" cy="40" rx="200" ry="90" fill="#d8c9a8" opacity="0.05"/>
+  <!-- 远山 -->
+  <path d="M0 320 L0 262 Q200 196 420 250 Q640 300 880 244 Q1080 200 1280 252 L1280 320 Z" fill="#3c3226" opacity="0.85"/>
+  <path d="M0 320 L0 290 Q240 244 500 282 Q760 316 1010 272 Q1160 250 1280 288 L1280 320 Z" fill="#4b3d2c" opacity="0.7"/>
+  <!-- 印章 -->
+  <g transform="translate(120,104)">
+    <rect width="94" height="94" rx="8" fill="#B23A2E"/>
+    <rect x="6" y="6" width="82" height="82" rx="5" fill="none" stroke="#F3E4C4" stroke-width="2" opacity="0.7"/>
+    <text x="47" y="66" font-size="52" fill="#F3E4C4" text-anchor="middle" font-weight="700">朝</text>
+  </g>
+  <!-- 文字 -->
+  <g transform="translate(250,0)">
+    <text x="0" y="140" font-size="74" font-weight="800" fill="url(#ct-gold)">CourtSim</text>
+    <text x="4" y="188" font-size="26" fill="#E7D8B8">明朝朝堂政治推演 · 站在大臣的位置上处理真实难题</text>
+    <text x="4" y="222" font-size="18" fill="#B7A57E">Multi-agent simulation of Ming-dynasty court politics</text>
+    <g font-size="17" font-weight="600">
+      <rect x="4" y="244" width="96" height="34" rx="17" fill="#EBD08A" opacity="0.14"/><text x="52" y="266" fill="#EBD08A" text-anchor="middle">明朝</text>
+      <rect x="110" y="244" width="150" height="34" rx="17" fill="#EBD08A" opacity="0.14"/><text x="185" y="266" fill="#EBD08A" text-anchor="middle">多智能体推演</text>
+      <rect x="270" y="244" width="130" height="34" rx="17" fill="#EBD08A" opacity="0.14"/><text x="335" y="266" fill="#EBD08A" text-anchor="middle">史料 RAG</text>
+    </g>
+  </g>
+</svg>
